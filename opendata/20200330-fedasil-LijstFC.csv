@@ -1,61 +1,61 @@
-﻿Naam;Adres;Straat;Nr;Zip;Gemeente;lat;lon
+Naam;Adres;Straat;Nr;Zip;Gemeente;Latitude;Longitude
 Koksijde;"Robert Vandammestraat 100A
-8670 Koksijde";;;;;;
+8670 Koksijde";Robert Vandammestraat;100A;8670;Koksijde;51.0996554;2.6317708
 Poelkapelle;"Stadensteenweg 68
-8920 Poelkapelle";;;;;;
+8920 Poelkapelle";Stadensteenweg;68;8920;Poelkapelle;50.944985599999995;2.971909522751318
 Mouscron;"Rue du Couvent 39
-7700 Mouscron";;;;;;
+7700 Mouscron";Rue du Couvent;39;7700;Mouscron;50.7412415;3.2006246
 Gent;"Rigakaai
-9000 Gent";;;;;;
+9000 Gent";Rigakaai;;9000;Gent;51.0751609;3.7383559
 Kapellen;"Kazerneweg 35
-2950 Kapellen";;;;;;
+2950 Kapellen";Kazerneweg;35;2950;Kapellen;51.3105637;4.454243098482136
 Deurne;"Ergo-De Waellaan 32
-2100 Deurne";;;;;;
+2100 Deurne";Ergo-De Waellaan;32;2100;Deurne;51.21101255;4.456939313660641
 Broechem;"Van den Nestlaan 104
-2520 Broechem";;;;;;
+2520 Broechem";Van den Nestlaan;104;2520;Broechem;51.1749415;4.580461552383117
 Arendonk;"Grens 77
-2370 Arendonk";;;;;;
+2370 Arendonk";Grens;77;2370;Arendonk;51.3477395;5.1182501792584585
 Lommel;"Boskantstraat 34
-3920 Lommel";;;;;;
+3920 Lommel";Boskantstraat;34;3920;Lommel;51.241740750000005;5.3749317662136615
 Sint-Truiden;"Montenakenweg 145
-3800 Sint-Truiden";;;;;;
+3800 Sint-Truiden";Montenakenweg;145;3800;Sint-Truiden;50.8066217;5.1758112
 Zoutleeuw;"Zoutleeuwse Steenweg 11
-3340 Zoutleeuw";;;;;;
+3340 Zoutleeuw";Zoutleeuwse Steenweg;11;3340;Zoutleeuw;50.8215983;5.1372955
 Overijse;"Homeweg 15
-3090 Overijse";;;;;;
+3090 Overijse";Homeweg;15;3090;Overijse;50.76615725;4.592238828131417
 Steenokkerzeel;"Keizerinlaan 2
-1820 Steenokkerzeel";;;;;;
+1820 Steenokkerzeel";Keizerinlaan;2;1820;Steenokkerzeel;50.91328875000001;4.512616886381721
 Sint-Pieters-Woluwe;"Palmboomstraat 80
-1150 Sint-Pieters-Woluwe";;;;;;
+1150 Sint-Pieters-Woluwe";Palmboomstraat;80;1150;Sint-Pieters-Woluwe;50.8256791;4.4080043
 Zaventem;"Excelsiorlaan 40
-1930 Zaventem";;;;;;
+1930 Zaventem";Excelsiorlaan;40;1930;Zaventem;50.883064399999995;4.45644387374608
 Neder-Over-Heembeek;"Bruynstraat 11-20
-1120 Neder-Over-Heembeek";;;;;;
+1120 Neder-Over-Heembeek";Bruynstraat;11-20;1120;Neder-Over-Heembeek;50.9086281;4.389684
 Jodoigne;"Chaussée de Hannut 141
-1370 Jodoigne";;;;;;
+1370 Jodoigne";Chaussée de Hannut;141;1370;Jodoigne;50.712498249999996;4.892077125556257
 Rixensart;"Rue du Plagniau 1
-1330 Rixensart";;;;;;
+1330 Rixensart";Rue du Plagniau;1;1330;Rixensart;50.7203982;4.5287305
 Morlanwelz;"Chaussée de Mariemont 92
-7140 Morlanwelz";;;;;;
+7140 Morlanwelz";Chaussée de Mariemont;92;7140;Morlanwelz;50.4672331;4.23525946005986
 Charleroi;"Parc Industriel 2ème rue 24
-6040 Charleroi";;;;;;
+6040 Charleroi";Parc Industriel 2ème rue;24;6040;Charleroi;50.455148;4.461700
 Florennes;"Rue Henry de Rohan Chabot 120
-5620 Florennes";;;;;;
+5620 Florennes";Rue Henry de Rohan Chabot;120;5620;Florennes;50.246340;4.617689
 Couvin;"Rue dessus de la ville 5
-5660 Couvin";;;;;;
+5660 Couvin";Rue dessus de la ville;5;5660;Couvin;50.0488865;4.4905031
 Pondrôme;"Rue du Tombois 4
-5574 Pondrôme";;;;;;
+5574 Pondrôme";Rue du Tombois;4;5574;Pondrôme;50.10086235;5.004857417738431
 Sugny;"Voies de Bohan 245
-5550 Sugny";;;;;;
+5550 Sugny";Voies de Bohan;245;5550;Sugny;49.836188;4.888053
 Herbeumont;"Les Fourches 1
-6887 Herbeumont";;;;;;
+6887 Herbeumont";Les Fourches;1;6887;Herbeumont;49.791071200000005;5.243825812499998
 Senonchamps;"Chaussée Romaine 99
-6600 Bastogne";;;;;;
+6600 Bastogne";Chaussée Romaine;99;6600;Bastogne;49.9976036;5.6863225
 Bovigny;"Chemin de Courtil 71X
-6671 Bovigny";;;;;;
+6671 Bovigny";Chemin de Courtil;71X;6671;Bovigny;50.2169003;5.9166215
 Spa;"Chemin du Mouton 39
-4900 Spa";;;;;;
+4900 Spa";Chemin du Mouton;39;4900;Spa;50.485020;5.846310
 Theux;"Route du Congrès de Polleur 53
-4910 Theux";;;;;;
+4910 Theux";Route du Congrès de Polleur;53;4910;Theux;50.5356827;5.877987
 Liège;"Rue François Lefèbvre 215
-4000 Liège (Rocourt)";;;;;;
+4000 Liège (Rocourt)";Rue François Lefèbvre;215;4000;Liège (Rocourt);50.680467;5.5482012
