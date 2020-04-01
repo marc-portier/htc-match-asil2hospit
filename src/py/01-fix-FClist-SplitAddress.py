@@ -35,6 +35,12 @@ country = 'Belgium'
 delimiter = ';'
 lines = []
 
+
+def stripUnwantedKeys(obj, REFKEYS):
+    for key in list(obj.keys()):  # clone the list for this iteration a
+        if not (key in REFKEYS):
+            del obj[key]
+
 # start off
 try:
     # read lines (using utf-8-sig to survive possible BOM character)
@@ -90,10 +96,7 @@ try:
         writer = DictWriter(flout, fieldnames=FIELDS, delimiter=delimiter)
         writer.writeheader()
         for line in lines:
-            # strip fields not in the FIELDS list
-            for key in list(line.keys()):   # clone the list for this iteration a
-                if not (key in FIELDS):
-                    del line[key]
+            stripUnwantedKeys(line, FIELDS)
             writer.writerow(line)
 
 except IOError:
