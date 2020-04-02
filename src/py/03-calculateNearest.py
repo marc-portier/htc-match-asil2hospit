@@ -3,15 +3,15 @@
 import argparse
 import os
 import json
-import geopy
 
+from geopy import distance
 from csv import DictReader, DictWriter
 
 FLD_ID ="business_product_id"
 FLD_PRODTYPE = "product_type"
 FILTER_PRODTYPE = "BASE"
-FLD_NM="name";
-FLD_TYPE="discriminator";
+FLD_NM="name"
+FLD_TYPE="discriminator"
 FLD_STR="street"
 FLD_NR ="house_number"
 FLD_ZIP="postal_code"
@@ -24,6 +24,10 @@ FLD_EMAIL="email"
 FLD_TEL="phone1"
 FLD_NEAR="nearestFC"
 FLD_DIST="distanceFC"
+
+REF_NM = 'Naam'
+REF_LAT="Latitude"
+REF_LON="Longitude"
 
 FIELDS = [ FLD_ID, FLD_NM, FLD_TYPE, FLD_STR, FLD_NR, FLD_ZIP, FLD_GEM,
            FLD_UNITS, FLD_CAPACITY, FLD_EMAIL, FLD_TEL,
@@ -67,9 +71,6 @@ try:
             if not(FLD_LON in inloc and FLD_LAT in inloc):
                 count_missing_latlon += 1
                 continue    # use some geolocator before this process!
-
-            # strip fields not in the FIELDS list
-            stripUnwantedKeys(inloc, FIELDS)
 except IOError:
     print("could not read", injson)
 
@@ -84,9 +85,32 @@ except IOError:
     print("could not read", refcsv)
 
 # calculate nearest
-
+for inloc in inlocs:
+    nearestFC = None
+    distanceFC = 0
+    for refloc in reflocs:
+        thisFC = refloc[REF_NM]
+        pos = (inloc[FLD_LAT], inloc[FLD_LON])
+        refpos = (refloc[REF_LAT], refloc[REF_LON])
+        dist = distance.distance(pos, refpos).kilometers
+        if (nearestFC is None) or (dist < distanceFC):
+            nearestFC = thisFC
+            distanceFC = dist
+    inloc[FLD_NEAR] = nearestFC
+    inloc[FLD_DIST] = distanceFC
 
 # generate output
+try:
+    with open(outcsv, 'w', encoding="utf-8", newline='') as flout:
+        writer = DictWriter(flout, fieldnames=FIELDS, delimiter=delimiter)
+        writer.writeheader()
+        for inloc in inlocs:
+            # strip fields not in the FIELDS list
+            stripUnwantedKeys(inloc, FIELDS)
+            writer.writerow(inloc)
+
+except IOError:
+    print("could not write", outcsv)
 
 if (count_missing_latlon > 0):
     print ("*** WARNING *** there were %d entries skipped because they had missing lat-lon" % count_missing_latlon)
